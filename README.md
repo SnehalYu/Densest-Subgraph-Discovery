@@ -12,6 +12,8 @@ PVLDB, 12(11): 1719-1732, 2019
 [arXiv:1906.00341](https://arxiv.org/abs/1906.00341)
 
 Densest subgraph discovery is a fundamental task in graph mining, with applications in community detection, biological networks, and graph databases. The goal is to find a subgraph of a given graph with the highest density, measured as the average number of edges (or h-cliques) per vertex.
+### Project Website  
+[Densest Subgraph Discovery](https://snehalyu.github.io/Densest-Subgraph-Discovery/)
 
 ---
 
