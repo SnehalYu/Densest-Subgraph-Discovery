@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Densest Subgraph Discovery Algorithms Comparison</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            Efficient Algorithms for Densest Subgraph Discovery
+        </div>
+        
+            
+       
+    </header>
+
+    <section>
+        <h2>Algorithm 1: Greedy Peeling (Baseline)</h2>
+        <div class="algorithm">
+            <p>
+                <strong>Description:</strong> The classic greedy peeling algorithm iteratively removes the vertex with the smallest degree, updating the graph at each step. It is simple and efficient, providing a 2-approximation for the densest subgraph problem.
+            </p>
+            <table>
+                <tr>
+                    <th>Graph</th>
+                    <th>Vertices (n)</th>
+                    <th>Edges (m)</th>
+                    <th>Estimated Densest Subgraph Vertices</th>
+                    <th>Estimated Density (h=2)</th>
+                    <th>Estimated Execution Time</th>
+                </tr>
+                <tr>
+                    <td>Yeast</td>
+                    <td>1116</td>
+                    <td>2148</td>
+                    <td>~300–400 nodes</td>
+                    <td>~4.5–5.2</td>
+                    <td>~2–4 seconds</td>
+                </tr>
+                <tr>
+                    <td>Netscience</td>
+                    <td>1589</td>
+                    <td>2742</td>
+                    <td>~400–500 nodes</td>
+                    <td>~4.1–4.6</td>
+                    <td>~3–5 seconds</td>
+                </tr>
+                <tr>
+                    <td>As-733</td>
+                    <td>1486</td>
+                    <td>3172</td>
+                    <td>~400–500 nodes</td>
+                    <td>~4.8–5.5</td>
+                    <td>~3–6 seconds</td>
+                </tr>
+                <tr>
+                    <td>Ca-HepTh</td>
+                    <td>9877</td>
+                    <td>25998</td>
+                    <td>~1500–2500 nodes</td>
+                    <td>~5.2–6.0</td>
+                    <td>~20–30 seconds</td>
+                </tr>
+                <tr>
+                    <td>As-Caida</td>
+                    <td>26475</td>
+                    <td>106762</td>
+                    <td>~5000–8000 nodes</td>
+                    <td>~7.5–9.0</td>
+                    <td>~60–90 seconds</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <h2>Algorithm 4: Linear-Time Algorithm (Proposed)</h2>
+        <div class="algorithm">
+            <p>
+                <strong>Description:</strong> The proposed linear-time algorithm significantly improves execution speed while maintaining high accuracy in estimating the densest subgraph. It leverages advanced data structures and optimization techniques.
+            </p>
+            <table>
+                <tr>
+                    <th>Graph</th>
+                    <th>Vertices (n)</th>
+                    <th>Edges (m)</th>
+                    <th>Estimated Densest Subgraph Vertices</th>
+                    <th>Estimated Density</th>
+                    <th>Estimated Execution Time</th>
+                </tr>
+                <tr>
+                    <td>Yeast</td>
+                    <td>1116</td>
+                    <td>2148</td>
+                    <td>~500</td>
+                    <td>~4.2</td>
+                    <td>~0.4 seconds</td>
+                </tr>
+                <tr>
+                    <td>Netscience</td>
+                    <td>1589</td>
+                    <td>2742</td>
+                    <td>~700</td>
+                    <td>~3.9</td>
+                    <td>~0.5 seconds</td>
+                </tr>
+                <tr>
+                    <td>As-733</td>
+                    <td>1486</td>
+                    <td>3172</td>
+                    <td>~600</td>
+                    <td>~4.8</td>
+                    <td>~0.5 seconds</td>
+                </tr>
+                <tr>
+                    <td>Ca-HepTh</td>
+                    <td>9877</td>
+                    <td>25998</td>
+                    <td>~4000</td>
+                    <td>~5.2</td>
+                    <td>~2–3 seconds</td>
+                </tr>
+                <tr>
+                    <td>As-Caida</td>
+                    <td>26475</td>
+                    <td>106762</td>
+                    <td>~10000</td>
+                    <td>~10.5</td>
+                    <td>~7–9 seconds</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            Paper: Efficient Algorithms for Densest Subgraph Discovery
+        </div>
+    </footer>
+</body>
+</html>
