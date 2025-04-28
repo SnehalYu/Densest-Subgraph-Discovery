@@ -62,7 +62,24 @@ This advanced algorithm leverages the concept of k-core and k-clique-core to sig
 
 
 ---
+## Datasets
 
+We use several real-world graph datasets for benchmarking. Download links and brief descriptions are provided below:
+
+| Dataset Name | Description | Nodes | Edges | Download Link |
+|--------------|-------------|-------|-------|--------------|
+| **S-DBLP** | Small DBLP collaboration network (subgraph of DBLP, co-authorship network) | 478 | 1,086 | [S-DBLP (com-DBLP)](https://snap.stanford.edu/data/com-DBLP.html) |
+| **Yeast** | Yeast protein-protein interaction network | 1,116 | 2,148 | [Yeast](https://snap.stanford.edu/data/bio-Yeast.html) |
+| **Netscience** | Netscience collaboration network | 1,589 | 2,742 | [Netscience](https://snap.stanford.edu/data/ca-Netscience.html) |
+| **AS-733** | Autonomous Systems graph from BGP logs | 1,733 | 3,172 | [AS-733](https://snap.stanford.edu/data/as-733.html) |
+| **Ca-HepTh** | High Energy Physics Theory collaboration network | 9,877 | 25,998 | [Ca-HepTh](https://snap.stanford.edu/data/ca-HepTh.html) |
+
+**Preparation Steps:**
+- Download the dataset from the provided link.
+- Unzip the file if necessary (usually `.txt.gz`).
+- Use the `.txt` file as input for the program.
+
+---
 
 
 ## Results
